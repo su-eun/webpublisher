@@ -1,0 +1,90 @@
+/* pc.css */
+.container {
+  /* outline: 1px solid red; */
+  max-width: 1200px; /* 가변 최대 1200px */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* header */
+header{
+  width: 1200px;
+  margin: 0 auto;
+  /* position: relative; */
+  background: #ccc;
+}
+
+header .logo{
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  top: 135px;
+  /* left: 50%; */
+  /* margin-left: -600px; */
+  /* width: 50%; */
+}
+header .logo i{
+  font-weight: 800;
+  font-style: normal;
+}
+
+header .logo span{
+  font-weight: 600;
+}
+
+header .main_gnb{
+  width: auto;
+  height: 48px;
+  float: right;
+  position: absolute;
+  top: 125px;
+  right: 25px;
+}
+
+header .main_gnb a{
+  /* display: block; */
+  font-size: 16px;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 200;
+}
+
+header > .container{
+  position: relative;
+  /* font-family: 'Belleza', sans-serif;  */
+  font-family: 'Jeju Gothic',sans-serif;
+}
+header > .container > h1 {
+  position: relative;
+  left: 20px; top: 17px;
+}
+header > .container #main_gnb {
+  position: absolute;
+  right: 250px; top: 30px;
+}
+header > .container #main_gnb li {
+  display: inline-block;
+  margin-left: 1em; margin-right: 1em;
+}
+header > .container #util {
+  position: absolute;
+  right: 0; top: 30px;
+}
+header > .container #util li {
+  display: inline-block;
+  margin-left: 1em; margin-right: 1em;
+}
+#main_gnb, #util { 
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+/* gnb hover */
+#main_gnb a:hover, #util a:hover {
+  color:#000;
+} 
+
+/* 토글 메뉴, 장바구니 아이콘 비표시 */
+#toggle, #util i.fa-shopping-bag { display: none;}

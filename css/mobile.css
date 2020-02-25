@@ -1,0 +1,102 @@
+/* mobile.css */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  /* background: #f00; */
+}
+
+#title .title > h2 {
+  font-size: 50px;
+}
+#main_header {
+  text-align: center; 
+}
+#main_header > .container {
+  padding: 10px;
+}
+#main_header h1 { 
+  position: fixed;
+  left: 50%; top: 0px;
+  transform: translateX(-50%);
+  z-index: 9;
+  width: 100%;
+  transition: .4s;
+}
+#main_header h1 img{
+  height: 32px;
+}
+#main_gnb {
+  margin-top: 10px;
+}
+#util {
+  margin-bottom: 10px;
+}
+.nav_group {
+  position: fixed;
+  left: 0; top: 0px;
+  width: 100%;
+  height: 0;
+  background: rgba(255, 255, 255, .8);
+  color: #666;
+  /* opacity: 0; */
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 9;
+  margin-top: 50px;
+}
+#main_header h1.nav_bg{
+  background: #fff;
+}
+.nav_group  li {
+  margin: 1.4em 0;
+}
+.nav_group li a:hover{
+  color: black;
+}
+.nav_group.show {
+  height: 320px;
+}
+
+/* 메뉴 슬라이드 다운 시 글자색 반전 */
+.nav_group + #toggle > i {
+  color: #444;
+}
+.nav_group.show + #toggle > i {
+  color: #444;
+}
+
+#toggle {
+  position: fixed;
+  left: 10px; top: 16px;
+  z-index: 10;
+}
+#toggle > i { 
+  /* color: #666; */
+  font-size: 24px;
+}
+#util .fa-shopping-bag {
+  position: fixed;
+  right: 20px; top: 16px;
+  font-size: 24px;
+  color: #444; 
+}
+
+/* 신제품 섹션 */
+#new_product ul { overflow: hidden;}
+#new_product .product_list > li {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+#new_product .product_list > li img {
+  width: 100%;
+}
+#new_product .product_list .title {
+  display: block;
+}
+#new_product .product_list .price {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: red;
+  margin-right: 1em;
+}
